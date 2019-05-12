@@ -1,4 +1,4 @@
-# classmate
+# Classmate App
 
 A new Flutter project.
 
