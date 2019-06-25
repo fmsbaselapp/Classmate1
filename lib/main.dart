@@ -12,18 +12,25 @@ class Classmate extends StatelessWidget {
         appBar: AppBar(
           title: Text(
             "Maximum",
-            style: TextStyle(fontFamily: 'Denise'),
+            style: TextStyle(fontFamily: 'MaaxBold'),
           ),
           actions: <Widget>[
             IconButton(icon: Icon(Icons.add_circle_outline), onPressed: () {})
           ],
         ),
         body: Center(
-          child: Column(
+          child: ListView(
             children: <Widget>[
-              Text("pornoooooo"),
-              Text("123"),
-              TextScreen(),
+              Column(
+                children: <Widget>[
+                  TextScreen(),
+                  TextScreen(),
+                  TextScreen(),
+                  TextScreen(),
+                  TextScreen(),
+                  TextScreen(),
+                ],
+              ),
             ],
           ),
         ),
@@ -35,10 +42,28 @@ class Classmate extends StatelessWidget {
 class TextScreen extends Classmate {
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Text(
-        "porn",
-        style: TextStyle(fontFamily: 'Denise'),
+    return Align(
+      alignment: Alignment.topCenter,
+      child: Container(
+        decoration: BoxDecoration(
+          boxShadow: [BoxShadow(
+            color: Color.fromRGBO(0, 0, 0, 15),
+            blurRadius: 20.0,
+            spreadRadius: 5.0,
+            offset: Offset(
+              10.0, // horizontal, move right 10
+              10.0, // vertical, move down 10
+            ),
+            
+          )],
+          color: Colors.red,
+          borderRadius: BorderRadius.all(
+            Radius.circular(15.0),
+          ),
+        ),
+        margin: EdgeInsets.all(5.0),
+        height: 70,
+        width: MediaQuery.of(context).size.width / 1,
       ),
     );
   }

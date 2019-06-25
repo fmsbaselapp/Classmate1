@@ -62,16 +62,22 @@ flutter:
   
 
   fonts:
-    - family: Maax
+    - family: MaaxBold
       fonts:
         - asset: asset/fonts/Maax-Bold.otf
-        - asset: asset/fonts/Maax-Medium.otf
-        - asset: asset/fonts/Maax-Regular.otf
-        - asset: asset/fonts/Denise-Sans.ttf
-
-    - family: Denise
+      
+    - family: MaaxMedium
       fonts:
-        - asset: asset/fonts/Denise-Sans.ttf
+        - asset: asset/fonts/Maax-Medium.otf
+
+    - family: MaaxRegular
+      fonts:
+        - asset: asset/fonts/Maax-Regular.otf
+
+
+       
+        
+        
 
    
         
