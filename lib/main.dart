@@ -1,90 +1,45 @@
-// Flutter code sample for material.BottomNavigationBar.1
-
-// This example shows a [BottomNavigationBar] as it is used within a [Scaffold]
-// widget. The [BottomNavigationBar] has three [BottomNavigationBarItem]
-// widgets and the [currentIndex] is set to index 0. The selected item is
-// amber. The `_onItemTapped` function changes the selected item's index
-// and displays a corresponding message in the center of the [Scaffold].
-//
-// ![A scaffold with a bottom navigation bar containing three bottom navigation
-// bar items. The first one is selected.](https://flutter.github.io/assets-for-api-docs/assets/material/bottom_navigation_bar.png)
-
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(Classmate());
 
-
-
-
-
-
-
-
-
-/// This Widget is the main application widget.
-class MyApp extends StatelessWidget {
-  static const String _title = 'Flutter Code Sample';
-
+@override
+class Classmate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: _title,
-      home: MyStatefulWidget(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            "Maximum",
+            style: TextStyle(fontFamily: 'Denise'),
+          ),
+          actions: <Widget>[
+            IconButton(icon: Icon(Icons.add_circle_outline), onPressed: () {})
+          ],
+        ),
+        body: Center(
+          child: Column(
+            children: <Widget>[
+              Text("pornoooooo"),
+              Text("123"),
+              TextScreen(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
 
-class MyStatefulWidget extends StatefulWidget {
-  MyStatefulWidget({Key key}) : super(key: key);
-
+class TextScreen extends Classmate {
   @override
-  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
-}
-
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-  ];
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  @override
-
-
-
-Widget build(BuildContext context) {
-  return new Scaffold(
-    bottomNavigationBar: BottomAppBar(
-      child: new Row(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          IconButton(icon: Icon(Icons.access_time), onPressed: () {},),
-          IconButton(icon: Icon(Icons.info_outline), onPressed: () {},),
-          IconButton(icon: Icon(Icons.add_circle_outline), onPressed: () {},),
-          IconButton(icon: Icon(Icons.calendar_today), onPressed: () {},),
-          IconButton(icon: Icon(Icons.settings), onPressed: () {},),
-        ],
+  Widget build(BuildContext context) {
+    return Card(
+      child: Text(
+        "porn",
+        style: TextStyle(fontFamily: 'Denise'),
       ),
-    ),
-  );
-}
+    );
+  }
 }
