@@ -19,11 +19,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cloud_firestore: ^0.12.5+2
+  firebase_core: ^0.2.5  # add dependency for Firebase Core
+  cloud_firestore:
+  
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
+    
 
 dev_dependencies:
   flutter_test:
@@ -65,7 +67,7 @@ flutter:
     - family: MaaxBold
       fonts:
         - asset: asset/fonts/Maax-Bold.otf
-      
+
     - family: MaaxMedium
       fonts:
         - asset: asset/fonts/Maax-Medium.otf
@@ -79,8 +81,7 @@ flutter:
         
         
 
-   
-        
+ 
           
    
   #
