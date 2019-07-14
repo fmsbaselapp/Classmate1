@@ -20,11 +20,10 @@ dependencies:
   flutter:
     sdk: flutter
   firebase_core: ^0.2.5  # add dependency for Firebase Core
-  firebase_auth:
-  google_sign_in:
+  firebase_auth: 
   cloud_firestore:
-  cupertino_icons: ^0.1.2
-  rxdart:
+
+
 
   
 
