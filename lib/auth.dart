@@ -1,4 +1,3 @@
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
@@ -28,11 +27,7 @@ class AuthService {
     }
   }
 
-  Future<FirebaseUser> anonLogin() async {
-    FirebaseUser user = await _auth.signInAnonymously();
-    updateUserData(user);
-    return user;
-  }
+  
 
   Future<void> updateUserData(FirebaseUser user) {
     DocumentReference reportRef = _db.collection('reports').document(user.uid);
