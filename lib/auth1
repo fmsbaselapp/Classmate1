@@ -1,0 +1,20 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+
+Future<FirebaseUser> signIn(String email, String password) async {
+    try {
+        FirebaseUser user = await auth.signInWithEmailAndPassword(
+            email: email, password: password);
+
+        assert(user != null);
+        assert(await user.getIdToken() != null);
+
+        final FirebaseUser currentUser = await auth.currentUser();
+        assert(user.uid == currentUser.uid);
+        return user;
+    } catch (e) {
+        handleError(e);
+        return null;
+    }
+}
