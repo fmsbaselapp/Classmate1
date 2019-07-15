@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'Setup/signIn.dart';
 import 'bottom_nav.dart';
 
 
-void main() => runApp(Classmate());
+void main() {
+  Crashlytics.instance.enableInDevMode = true;
+
+  // Pass all uncaught errors to Crashlytics.
+  FlutterError.onError = (FlutterErrorDetails details) {
+    Crashlytics.instance.onError(details);
+  };
+  runApp(Classmate());
+}
 
 @override
 class Classmate extends StatelessWidget {
@@ -14,6 +23,7 @@ class Classmate extends StatelessWidget {
       title: 'Classmate',
       theme: ThemeData(),
       home: LoginPage(),
+
       
     );
   }

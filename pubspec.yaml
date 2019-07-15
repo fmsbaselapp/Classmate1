@@ -22,7 +22,7 @@ dependencies:
   firebase_core:  
   firebase_auth: ^0.11.1+8
   cloud_firestore: 
-
+  firebase_crashlytics:
 
 
   
@@ -70,15 +70,15 @@ flutter:
   fonts:
     - family: MaaxBold
       fonts:
-        - asset: asset/fonts/Maax-Bold.otf
+        - asset: lib/asset/fonts/Maax-Bold.otf
 
     - family: MaaxMedium
       fonts:
-        - asset: asset/fonts/Maax-Medium.otf
+        - asset: lib/asset/fonts/Maax-Medium.otf
 
     - family: MaaxRegular
       fonts:
-        - asset: asset/fonts/Maax-Regular.otf
+        - asset: lib/asset/fonts/Maax-Regular.otf
 
 
        

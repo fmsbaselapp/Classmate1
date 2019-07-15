@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-
-
 /*
 class Ausfaelle extends StatelessWidget {
   @override
@@ -44,7 +42,9 @@ class Ausfaelle extends StatelessWidget {
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
       stream: Firestore.instance
-          .collection('Ausfaelle').document('FMS Basel').collection('Montag')
+          .collection('Ausfaelle')
+          .document('FMS Basel')
+          .collection('Montag')
           .snapshots(),
       builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
         if (snapshot.hasError) return new Text('Error: ${snapshot.error}');
