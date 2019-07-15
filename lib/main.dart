@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'Setup/signIn.dart';
 import 'bottom_nav.dart';
-//import 'stundenplan.dart';
-//import 'ausfälle_firebase.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 
 void main() => runApp(Classmate());
 
@@ -16,9 +14,11 @@ class Classmate extends StatelessWidget {
       title: 'Classmate',
       theme: ThemeData(),
       home: LoginPage(),
+      
     );
   }
 }
+
 
 
 

@@ -4,7 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 
-
+/*
 class Ausfaelle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -37,14 +37,14 @@ class Ausfaelle extends StatelessWidget {
                     },
                   );
                 };
+*/
 
-/*
 class Ausfaelle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
       stream: Firestore.instance
-          .collection('FMS BASEL')
+          .collection('Ausfaelle').document('FMS Basel').collection('Montag')
           .snapshots(),
       builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
         if (snapshot.hasError) return new Text('Error: ${snapshot.error}');
@@ -71,7 +71,7 @@ class Ausfaelle extends StatelessWidget {
     );
   }
 }
-*/
+
 /*
 class Ausfaelle extends StatelessWidget {
   const Ausfaelle({Key key}) : super(key: key);
