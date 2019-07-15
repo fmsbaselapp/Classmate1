@@ -72,5 +72,4 @@
 #firebase connection
 **/ios/Runner/GoogleService-Info.plist
 **/android/app/GoogleService-Info.plist
-GoogleService.plist
-GoogleServices.json
+**/GoogleService-Info.plist
