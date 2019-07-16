@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart'; p1
 
 /*
 class Ausfaelle extends StatelessWidget {
@@ -37,6 +37,8 @@ class Ausfaelle extends StatelessWidget {
                 };
 */
 
+/*
+p1
 class Ausfaelle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -71,6 +73,12 @@ class Ausfaelle extends StatelessWidget {
     );
   }
 }
+
+*/
+
+
+
+
 
 /*
 class Ausfaelle extends StatelessWidget {

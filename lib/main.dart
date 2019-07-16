@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+//import 'package:firebase_crashlytics/firebase_crashlytics.dart'; p1
+//import 'Setup/signIn.dart'; p1
 import 'Setup/signIn.dart';
 import 'bottom_nav.dart';
 
 
 void main() {
-  Crashlytics.instance.enableInDevMode = true;
+  //Crashlytics.instance.enableInDevMode = true; p1
 
   // Pass all uncaught errors to Crashlytics.
   FlutterError.onError = (FlutterErrorDetails details) {
-    Crashlytics.instance.onError(details);
+   // Crashlytics.instance.onError(details); p1
   };
   runApp(Classmate());
 }

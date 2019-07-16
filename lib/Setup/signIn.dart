@@ -1,6 +1,6 @@
 import 'package:classmate/Pages/home.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+//import 'package:firebase_auth/firebase_auth.dart'; 
 
 
 class LoginPage extends StatefulWidget {
@@ -41,16 +41,17 @@ class _LoginPageState extends State<LoginPage> {
               decoration: InputDecoration(labelText: 'Password'),
               obscureText: true,
             ),
-            RaisedButton(
+            /* p1 RaisedButton( 
               onPressed: signIn,
-              child: Text('Sign In'),
-            )
+              child: Text('Sign In'), 
+            ) */
           ],
         ),
       ),
     );
   }
 
+/*
   Future<void> signIn() async {
     final formState = _formkey.currentState;
     if (formState.validate()) {
@@ -67,4 +68,5 @@ class _LoginPageState extends State<LoginPage> {
       }
     }
   }
+  p1*/
 }
