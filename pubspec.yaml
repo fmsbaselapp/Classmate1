@@ -19,10 +19,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  #firebase_core:  
-  #firebase_auth: ^0.11.1+8
-  #cloud_firestore: 
-  #firebase_crashlytics: ^0.0.4+11
+  firebase_core: ^0.4.0+6
+  firebase_auth: ^0.11.1+10
+  cloud_firestore: ^0.12.7
+  firebase_crashlytics: ^0.0.4+11
 
 
   

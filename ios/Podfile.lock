@@ -169,7 +169,7 @@ SPEC CHECKSUMS:
   Crashlytics: 1f5f752c7feac0add0cc1774756f96444fa3b1a7
   Fabric: 09de1e053eb7dc415593166ad3e53d4c88123405
   Firebase: fa80b9d987ca014a1ba9357496ef2a0178b28b12
-  firebase_auth: 3b8e685dbf2519d315265f3d2283da3fd0711ee3
+  firebase_auth: b5657b3e35c8af36d74c8b67b068bc77d056b474
   firebase_core: 44f31f51532812598f0f9f4af0caa705b9edfc19
   firebase_crashlytics: 90224b1e8534bb61de9db7d786892ba582e49a9a
   FirebaseAnalytics: 1743c5f4de3687d0745709dfdc4b1dea1484f44c
